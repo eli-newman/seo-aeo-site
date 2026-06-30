@@ -6,12 +6,12 @@
 > a GitHub Actions cron. Free, MIT-licensed.
 
 ## Key pages
-- [Home](https://seo-aeo.dev/): what it is, how it works, install
-- [Quickstart](https://seo-aeo.dev/docs/quickstart): zero to optimized in under 10 minutes
-- [Install](https://seo-aeo.dev/docs/install): plugin, skills/CLI, or AGENTS.md for any agent
-- [How it works](https://seo-aeo.dev/docs/how-it-works): the 8 gated phases + safety contract
-- [What is AEO/GEO](https://seo-aeo.dev/docs/aeo): the teaching on AI-answer-engine citation
-- [FAQ](https://seo-aeo.dev/docs/faq): cost, supported stacks, safety, scope
+- [Home](https://seo-aeo-site.vercel.app/): what it is, how it works, install
+- [Quickstart](https://seo-aeo-site.vercel.app/docs/quickstart): zero to optimized in under 10 minutes
+- [Install](https://seo-aeo-site.vercel.app/docs/install): plugin, skills/CLI, or AGENTS.md for any agent
+- [How it works](https://seo-aeo-site.vercel.app/docs/how-it-works): the 8 gated phases + safety contract
+- [What is AEO/GEO](https://seo-aeo-site.vercel.app/docs/aeo): the teaching on AI-answer-engine citation
+- [FAQ](https://seo-aeo-site.vercel.app/docs/faq): cost, supported stacks, safety, scope
 - [GitHub](https://github.com/eli-newman/seo-aeo): source, issues, releases
 
 ## What it does (quotable)

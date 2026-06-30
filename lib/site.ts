@@ -5,7 +5,9 @@ export const site = {
   tagline: "Rank in Google. Get cited by AI.",
   description:
     "An open-source engine + agent skills that make any site rank in Google AND get cited by AI answer engines (ChatGPT, Perplexity, Gemini), then auto-publish an optimized article every 1-2 weeks.",
-  url: "https://seo-aeo.dev",
+  // The live URL. Swap to a custom domain (e.g. seo-aeo.dev) once it's
+  // pointed at this Vercel project — canonical/sitemap/JSON-LD follow it.
+  url: "https://seo-aeo-site.vercel.app",
   repo: "https://github.com/eli-newman/seo-aeo",
   repoShort: "eli-newman/seo-aeo",
   author: "Eli Newman",
