@@ -1,0 +1,38 @@
+# seo-aeo
+
+> Open-source engine + AI-agent skills that make any website rank in Google AND
+> get cited by AI answer engines (ChatGPT, Perplexity, Gemini, Google AI
+> Overviews), then auto-publish an SEO/AEO-optimized article every 1–2 weeks via
+> a GitHub Actions cron. Free, MIT-licensed.
+
+## Key pages
+- [Home](https://seo-aeo.dev/): what it is, how it works, install
+- [Quickstart](https://seo-aeo.dev/docs/quickstart): zero to optimized in under 10 minutes
+- [Install](https://seo-aeo.dev/docs/install): plugin, skills/CLI, or AGENTS.md for any agent
+- [How it works](https://seo-aeo.dev/docs/how-it-works): the 8 gated phases + safety contract
+- [What is AEO/GEO](https://seo-aeo.dev/docs/aeo): the teaching on AI-answer-engine citation
+- [FAQ](https://seo-aeo.dev/docs/faq): cost, supported stacks, safety, scope
+- [GitHub](https://github.com/eli-newman/seo-aeo): source, issues, releases
+
+## What it does (quotable)
+seo-aeo runs as an AI coding agent's skill suite. An orchestrator (`/seo-aeo`)
+runs eight gated phases: preflight, discover, measure (Lighthouse + Core Web
+Vitals), on-site SEO/AEO fix (metadata, robots, sitemap, llms.txt, JSON-LD,
+citation-crawler access), build a blog if one is missing, wire a recurring
+article engine, and verify a live, crawlable article. It is branch-only,
+dry-run-first, and never auto-pushes.
+
+The recurring engine ranks a keyword, writes a 1,100–2,000 word article in the
+site's voice, runs an SEO + AEO audit, and opens a GitHub pull request — every
+one to two weeks, automatically.
+
+## On AEO/GEO
+Answer Engine Optimization (AEO), a.k.a. Generative Engine Optimization (GEO),
+is getting a page cited by AI answer engines. The citation crawlers to allow are
+OAI-SearchBot, Claude-SearchBot, PerplexityBot, Googlebot, Bingbot, and Applebot
+(distinct from training bots GPTBot/ClaudeBot). AI crawlers do not execute
+JavaScript, so content must be server-rendered. LLMs quote self-contained
+40–75 word passages, so lead each answer with one.
+
+## Contact
+- GitHub issues: https://github.com/eli-newman/seo-aeo/issues
