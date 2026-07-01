@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { site } from "@/lib/site";
 import { CopyBlock } from "./components/copy-block";
@@ -8,50 +9,74 @@ export default function Home() {
     <>
       {/* ---------- Hero ---------- */}
       <section className="relative overflow-hidden border-b border-border">
-        <div className="bg-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_60%,transparent_100%)]" />
-        <div className="absolute left-1/2 top-[-10rem] h-[28rem] w-[40rem] -translate-x-1/2 rounded-full bg-accent/10 blur-[120px]" />
-        <div className="relative mx-auto max-w-4xl px-5 pb-20 pt-20 text-center sm:pt-28">
-          <a
-            href={site.repo}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-panel px-3 py-1 text-xs text-fg-muted transition hover:border-border-strong"
-          >
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Open source · MIT · proven autonomous
-          </a>
-          <h1 className="mt-6 text-balance text-5xl font-semibold tracking-tight sm:text-6xl">
-            Rank in Google.
-            <br />
-            <span className="gradient-text">Get cited by AI.</span>
-          </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-fg-muted">
-            seo-aeo is an open-source engine + agent skills that make any site
-            rank in search <em className="text-fg not-italic">and</em> get cited
-            by ChatGPT, Perplexity, and Gemini — then auto-publish an optimized
-            article every week or two. Hand it to your coding agent and go.
-          </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <Link
-              href="/docs/quickstart"
-              className="rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-bg transition hover:bg-accent/90"
-            >
-              Get started →
-            </Link>
+        <div className="pointer-events-none absolute left-1/3 top-[-12rem] h-[30rem] w-[46rem] -translate-x-1/2 rounded-full bg-accent/10 blur-[130px]" />
+        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-16 sm:pt-20 lg:grid-cols-2">
+          <div>
             <a
               href={site.repo}
-              className="rounded-lg border border-border bg-panel px-5 py-2.5 text-sm font-medium text-fg transition hover:border-border-strong"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-panel px-3 py-1 text-xs text-fg-muted transition hover:border-border-strong"
             >
-              Star on GitHub ★
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+              Open source · MIT · proven autonomous
             </a>
-          </div>
-          <div className="mx-auto mt-10 max-w-xl text-left">
-            <CopyBlock label="Claude Code" lines={[...site.install.plugin]} />
-            <p className="mt-2 text-center text-xs text-fg-faint">
-              Two commands to install, one to run. Also works with any agent via{" "}
-              <Link href="/docs/install" className="text-accent hover:underline">
-                AGENTS.md
-              </Link>
-              .
+            <h1 className="mt-6 text-balance text-5xl font-semibold tracking-tight sm:text-6xl">
+              Rank in Google.
+              <br />
+              <span className="gradient-text">Get cited by AI.</span>
+            </h1>
+            <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-fg-muted">
+              An open-source engine + agent skills that make any site rank in
+              search <em className="not-italic text-fg">and</em> get cited by
+              ChatGPT, Perplexity, and Gemini — then auto-publish an optimized
+              article every week or two. Hand it to your agent and go.
             </p>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <Link
+                href="/docs/quickstart"
+                className="rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-bg transition hover:bg-accent/90"
+              >
+                Get started →
+              </Link>
+              <a
+                href={site.repo}
+                className="rounded-lg border border-border bg-panel px-5 py-2.5 text-sm font-medium text-fg transition hover:border-border-strong"
+              >
+                Star on GitHub ★
+              </a>
+            </div>
+            <div className="mt-8 max-w-md">
+              <CopyBlock label="terminal" lines={[...site.install.quickstart]} />
+              <p className="mt-2 text-xs text-fg-faint">
+                Then run <Code>/seo-aeo</Code> in your agent. Any agent via{" "}
+                <Link href="/docs/install" className="text-accent hover:underline">
+                  AGENTS.md
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+
+          {/* illustration showcase */}
+          <div className="relative">
+            <div className="pointer-events-none absolute -inset-3 rounded-[1.75rem] bg-gradient-to-tr from-accent/30 via-accent-2/20 to-transparent opacity-70 blur-2xl" />
+            <div className="relative overflow-hidden rounded-2xl border border-border-strong bg-panel shadow-2xl">
+              <div className="flex items-center gap-1.5 border-b border-border px-3.5 py-2.5">
+                <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
+                <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
+                <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
+                <span className="ml-2 font-mono text-[11px] text-fg-faint">
+                  the SEO → AEO journey
+                </span>
+              </div>
+              <Image
+                src="/hero.png"
+                alt="Pixel-art map of the journey from SEO to AEO: a developer with rising ranking charts and five-star reviews, a path up to the SEO traffic peak (a lighthouse pointing at Google Search), an entity path across a bridge to the AEO & GEO nexus — an answer-engine portal feeding LLMs and a knowledge graph, with a garden of FAQ, Article, and How-To content plots."
+                width={1024}
+                height={536}
+                priority
+                className="h-auto w-full"
+              />
+            </div>
           </div>
         </div>
       </section>

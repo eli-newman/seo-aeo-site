@@ -12,13 +12,15 @@ export const site = {
   repoShort: "eli-newman/seo-aeo",
   author: "Eli Newman",
   install: {
+    // Primary, username-free install shown on the landing.
+    quickstart: ["npx -y seo-aeo install-skills"],
     plugin: [
       "/plugin marketplace add eli-newman/seo-aeo",
       "/plugin install seo-aeo@seo-aeo-tools",
       "/seo-aeo",
     ],
-    skills: "npx -y github:eli-newman/seo-aeo install-skills",
-    engine: "npm install -D github:eli-newman/seo-aeo",
+    skills: "npx -y seo-aeo install-skills",
+    engine: "npm install -D seo-aeo",
   },
 } as const;
 
