@@ -12,13 +12,8 @@ export const site = {
   repoShort: "eli-newman/seo-aeo",
   author: "Eli Newman",
   install: {
-    // Primary, username-free install shown on the landing.
+    // All username-free (npm/npx). No GitHub owner shown.
     quickstart: ["npx -y seo-aeo install-skills"],
-    plugin: [
-      "/plugin marketplace add eli-newman/seo-aeo",
-      "/plugin install seo-aeo@seo-aeo-tools",
-      "/seo-aeo",
-    ],
     skills: "npx -y seo-aeo install-skills",
     engine: "npm install -D seo-aeo",
   },

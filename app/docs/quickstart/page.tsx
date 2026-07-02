@@ -30,16 +30,15 @@ export default function Page() {
         href="/docs/quickstart"
       />
 
-      <h2>1. Install (Claude Code)</h2>
+      <h2>1. Install</h2>
       <p>
-        The fastest path is the Claude Code plugin. Two commands to install, one
-        to run:
+        Install the skill suite into your project, then run the orchestrator:
       </p>
-      <CopyBlock label="Claude Code" lines={[...site.install.plugin]} className="not-prose my-5" />
+      <CopyBlock lines={[...site.install.quickstart]} className="not-prose my-5" />
       <p>
-        Don&apos;t use Claude Code? See <a href="/docs/install">all install
-        methods</a> — every coding agent can run it via the repo&apos;s{" "}
-        <code>AGENTS.md</code>.
+        Then run <code>/seo-aeo</code> in your agent. Don&apos;t use Claude Code?
+        See <a href="/docs/install">all install methods</a> — every coding agent
+        can run it via the repo&apos;s <code>AGENTS.md</code>.
       </p>
 
       <h2>2. What it asks you (up front)</h2>

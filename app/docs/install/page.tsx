@@ -20,21 +20,17 @@ export default function Page() {
         href="/docs/install"
       />
 
-      <h2>Option 1 — Claude Code plugin (recommended)</h2>
+      <h2>Option 1 — Install the skills (recommended)</h2>
       <p>
-        Installs the orchestrator <code>/seo-aeo</code> plus all seven task
-        skills as one plugin. Two commands, then run it:
-      </p>
-      <CopyBlock label="Claude Code" lines={[...site.install.plugin]} className="not-prose my-5" />
-
-      <h2>Option 2 — Skills into one project</h2>
-      <p>
-        Copy the skills into a single project&apos;s <code>.claude/skills/</code>{" "}
-        without the marketplace:
+        Copies the orchestrator <code>/seo-aeo</code> plus all seven task skills
+        into your project&apos;s <code>.claude/skills/</code>. Then run it:
       </p>
       <CopyBlock lines={[site.install.skills]} className="not-prose my-5" />
+      <p>
+        Then run <code>/seo-aeo</code> in your agent to start the guided setup.
+      </p>
 
-      <h2>Option 3 — Any agent, via AGENTS.md</h2>
+      <h2>Option 2 — Any agent, via AGENTS.md</h2>
       <p>
         Every coding agent — Cursor, Copilot, Windsurf, Aider, Claude Code —
         reads <code>AGENTS.md</code> at a repo root. seo-aeo ships one that

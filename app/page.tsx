@@ -240,10 +240,10 @@ export default function Home() {
             Make your site impossible to ignore — by Google and by AI.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-fg-muted">
-            Free, open source, and proven. Install it in two commands.
+            Free, open source, and proven. Install it in one command.
           </p>
-          <div className="mx-auto mt-8 max-w-xl text-left">
-            <CopyBlock label="Claude Code" lines={[...site.install.plugin]} />
+          <div className="mx-auto mt-8 max-w-md text-left">
+            <CopyBlock label="terminal" lines={[...site.install.quickstart]} />
           </div>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link
