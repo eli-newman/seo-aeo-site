@@ -12,10 +12,13 @@ export const site = {
   repoShort: "eli-newman/seo-aeo",
   author: "Eli Newman",
   install: {
-    // All username-free (npm/npx). No GitHub owner shown.
-    quickstart: ["npx -y seo-aeo install-skills"],
-    skills: "npx -y seo-aeo install-skills",
-    engine: "npm install -D seo-aeo",
+    // Lowest friction: clone + copy the (plain-markdown) skills. No npm, no build.
+    quickstart: [
+      "git clone https://github.com/eli-newman/seo-aeo ~/seo-aeo",
+      "mkdir -p ~/.claude/skills && cp -r ~/seo-aeo/skills/* ~/.claude/skills/",
+    ],
+    skills: "npx -y github:eli-newman/seo-aeo install-skills",
+    engine: "npm install -D github:eli-newman/seo-aeo",
   },
 } as const;
 

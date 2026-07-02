@@ -20,14 +20,16 @@ export default function Page() {
         href="/docs/install"
       />
 
-      <h2>Option 1 — Install the skills (recommended)</h2>
+      <h2>Option 1 — Clone + copy the skills (recommended)</h2>
       <p>
-        Copies the orchestrator <code>/seo-aeo</code> plus all seven task skills
-        into your project&apos;s <code>.claude/skills/</code>. Then run it:
+        The orchestrator <code>/seo-aeo</code> plus all seven task skills are
+        plain markdown — nothing to build. Clone the repo and copy the{" "}
+        <code>skills/</code> folder into <code>~/.claude/skills/</code>:
       </p>
-      <CopyBlock lines={[site.install.skills]} className="not-prose my-5" />
+      <CopyBlock lines={[...site.install.quickstart]} className="not-prose my-5" />
       <p>
-        Then run <code>/seo-aeo</code> in your agent to start the guided setup.
+        Prefer one line, no clone? <code>{site.install.skills}</code>. Then run{" "}
+        <code>/seo-aeo</code> in your agent to start the guided setup.
       </p>
 
       <h2>Option 2 — Any agent, via AGENTS.md</h2>

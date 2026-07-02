@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const steps = [
-  { name: "Install the plugin", text: "In Claude Code, add the marketplace and install the seo-aeo plugin." },
+  { name: "Install the skills", text: "Clone the repo and copy the skills folder into ~/.claude/skills (they're plain markdown — nothing to build)." },
   { name: "Run the orchestrator", text: "Run /seo-aeo and answer the upfront questions (repo, site URL, automation)." },
   { name: "Let it run the phases", text: "The agent runs discover, measure, on-site fix, blog, engine, and verify — gated." },
   { name: "Merge the article PR", text: "From then on, a fresh optimized article PR arrives every 1-2 weeks." },
@@ -32,7 +32,8 @@ export default function Page() {
 
       <h2>1. Install</h2>
       <p>
-        Install the skill suite into your project, then run the orchestrator:
+        The skills are plain markdown — nothing to build. Clone the repo and
+        copy them into your Claude skills folder:
       </p>
       <CopyBlock lines={[...site.install.quickstart]} className="not-prose my-5" />
       <p>
