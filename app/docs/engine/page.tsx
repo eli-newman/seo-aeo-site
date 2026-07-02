@@ -34,7 +34,7 @@ export default function Page() {
       <h2>Running it</h2>
       <CopyBlock
         lines={[
-          "npm install -D seo-aeo",
+          "npm install -D github:eli-newman/seo-aeo",
           "ANTHROPIC_API_KEY=… npx seo-aeo init",
           "npx seo-aeo run --dry-run",
         ]}
