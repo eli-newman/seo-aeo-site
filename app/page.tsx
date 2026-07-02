@@ -72,7 +72,7 @@ export default function Home() {
                 src="/hero.png"
                 alt="Pixel-art map of the journey from SEO to AEO: a developer with rising ranking charts and five-star reviews, a path up to the SEO traffic peak (a lighthouse pointing at Google Search), an entity path across a bridge to the AEO & GEO nexus — an answer-engine portal feeding LLMs and a knowledge graph, with a garden of FAQ, Article, and How-To content plots."
                 width={1024}
-                height={536}
+                height={559}
                 priority
                 className="h-auto w-full"
               />
