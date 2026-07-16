@@ -25,6 +25,12 @@ export function Nav() {
           >
             What is AEO
           </Link>
+          <Link
+            href="/blog"
+            className="rounded-md px-3 py-1.5 text-fg-muted transition hover:text-fg"
+          >
+            Blog
+          </Link>
           <a
             href={site.repo}
             target="_blank"
