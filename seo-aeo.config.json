@@ -1,0 +1,45 @@
+{
+  "name": "seo-aeo",
+  "siteUrl": "https://seo-aeo-site.vercel.app",
+  "author": "Eli Newman",
+  "layout": {
+    "framework": "next",
+    "draftsPath": "content/drafts",
+    "postsPath": "content/posts",
+    "publicPath": "public",
+    "publicUrlBase": "/blog"
+  },
+  "article": {
+    "targetWordCount": 1500,
+    "minWordCount": 1100,
+    "maxWordCount": 2000,
+    "internalLinkTargets": [
+      { "url": "/", "anchor": "seo-aeo" },
+      { "url": "/docs/quickstart", "anchor": "the quickstart" },
+      { "url": "/docs/aeo", "anchor": "what AEO is" },
+      { "url": "/blog", "anchor": "the blog" },
+      { "url": "https://github.com/eli-newman/seo-aeo", "anchor": "the open-source engine" }
+    ]
+  },
+  "icp": {
+    "primaryRoles": [
+      "developer running AI coding agents",
+      "indie hacker with a Next.js or Astro site",
+      "technical founder",
+      "SEO practitioner moving into AEO"
+    ],
+    "companySize": "solo / small team",
+    "pain": "Ships a good product but Google ignores it and AI answer engines never cite it; wants agents to do the optimization work instead of learning SEO manually"
+  },
+  "images": {
+    "enabled": false
+  },
+  "audit": {
+    "seoMinScore": 80,
+    "aeoMinScore": 75
+  },
+  "cadence": {
+    "frequency": "biweekly",
+    "cron": "0 15 * * 4"
+  }
+}

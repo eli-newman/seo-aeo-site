@@ -1,0 +1,74 @@
+{
+  "keywords": [
+    {
+      "keyword": "what is llms.txt",
+      "intent": "informational",
+      "volume": 1900,
+      "difficulty": 20,
+      "notes": "Estimate. Fast-growing query with no entrenched authority yet - the exact gap this site should own."
+    },
+    {
+      "keyword": "how to get cited by chatgpt",
+      "intent": "informational",
+      "volume": 720,
+      "difficulty": 24,
+      "notes": "Estimate. The product's headline promise; searcher is the exact ICP."
+    },
+    {
+      "keyword": "answer engine optimization checklist",
+      "intent": "informational",
+      "volume": 390,
+      "difficulty": 22,
+      "notes": "Estimate. Checklist-shaped content is highly citable by LLMs - AEO for the AEO article."
+    },
+    {
+      "keyword": "aeo vs seo",
+      "intent": "informational",
+      "volume": 880,
+      "difficulty": 26,
+      "notes": "Estimate. Definitional comparison; strong FAQ schema fit."
+    },
+    {
+      "keyword": "seo for ai agents",
+      "intent": "informational",
+      "volume": 320,
+      "difficulty": 18,
+      "notes": "Estimate. Agent-first angle - almost no serious content exists; positions agents as the operators of SEO, our core thesis."
+    },
+    {
+      "keyword": "structured data for llms",
+      "intent": "informational",
+      "volume": 260,
+      "difficulty": 19,
+      "notes": "Estimate. JSON-LD Article/FAQPage guidance straight from our own checklist."
+    },
+    {
+      "keyword": "how does perplexity choose sources",
+      "intent": "informational",
+      "volume": 480,
+      "difficulty": 21,
+      "notes": "Estimate. Curiosity query that converts to 'how do I become a source'."
+    },
+    {
+      "keyword": "generative engine optimization guide",
+      "intent": "informational",
+      "volume": 590,
+      "difficulty": 28,
+      "notes": "Estimate. GEO is the academic/agency name for the same discipline; capture both vocabularies."
+    },
+    {
+      "keyword": "automate blog posts with github actions",
+      "intent": "informational",
+      "volume": 210,
+      "difficulty": 17,
+      "notes": "Estimate. Developer-intent query that lands directly on our engine's exact mechanism."
+    },
+    {
+      "keyword": "ai crawlers robots.txt allow list",
+      "intent": "informational",
+      "volume": 340,
+      "difficulty": 16,
+      "notes": "Estimate. Practical question (OAI-SearchBot, ChatGPT-User, PerplexityBot) our robots recipe answers verbatim."
+    }
+  ]
+}
